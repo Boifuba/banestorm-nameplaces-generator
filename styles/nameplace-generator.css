@@ -1,0 +1,255 @@
+/* Banestorm Nameplace Generator Styles */
+
+.nameplace-generator-dialog {
+  min-width: 500px;
+  min-height: 400px;
+}
+
+.nameplace-generator-form {
+  padding: 0;
+  margin: 0;
+}
+
+.nameplace-generator-form-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--color-border-light-primary);
+}
+
+.nameplace-generator-form-header i {
+  font-size: 24px;
+  color: var(--color-text-dark-primary);
+}
+
+.nameplace-generator-form-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-text-dark-primary);
+}
+
+.nameplace-generator-dialog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nameplace-generator-form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nameplace-generator-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nameplace-generator-form-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  color: var(--color-text-dark-primary);
+  font-size: 14px;
+}
+
+.nameplace-generator-form-group label i {
+  font-size: 16px;
+  color: var(--color-text-dark-secondary);
+}
+
+.nameplace-generator-nation-select {
+  padding: 8px 12px;
+  border: 1px solid var(--color-border-light-primary);
+  border-radius: 4px;
+  background: var(--color-bg-light);
+  color: var(--color-text-dark-primary);
+  font-size: 14px;
+  min-height: 36px;
+}
+
+.nameplace-generator-nation-select:focus {
+  outline: none;
+  border-color: var(--color-border-highlight);
+  box-shadow: 0 0 0 2px var(--color-border-highlight-alt);
+}
+
+.nameplace-generator-names-container {
+  flex: 1;
+  min-height: 200px;
+  border: 1px solid var(--color-border-light-primary);
+  border-radius: 6px;
+  background: var(--color-bg-light);
+  padding: 15px;
+}
+
+.nameplace-generator-names-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.nameplace-generator-no-names {
+  text-align: center;
+  color: var(--color-text-dark-secondary);
+  font-style: italic;
+  padding: 40px 20px;
+  border: 2px dashed var(--color-border-light-primary);
+  border-radius: 4px;
+  background: var(--color-bg-alt);
+}
+
+.nameplace-generator-name-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 1px solid var(--color-border-light-primary);
+  border-radius: 6px;
+  background: var(--color-bg);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.nameplace-generator-name-item:hover {
+  background: var(--color-bg-alt);
+  border-color: var(--color-border-highlight);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nameplace-generator-name-item.city {
+  border-left: 4px solid #3498db;
+}
+
+.nameplace-generator-name-item i {
+  font-size: 18px;
+  color: var(--color-text-dark-secondary);
+  min-width: 20px;
+}
+
+.nameplace-generator-name-item.city i {
+  color: #3498db;
+}
+
+.nameplace-generator-name-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text-dark-primary);
+  flex: 1;
+}
+
+.nameplace-generator-name-item.nameplace-generator-selected {
+  background: var(--color-bg-highlight);
+  border-color: var(--color-border-highlight);
+  transform: scale(0.98);
+}
+
+.nameplace-generator-name-item.nameplace-generator-selected::after {
+  content: "✓";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-light-primary);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Chat message styles */
+.nameplace-generator-chat-result {
+  border: 1px solid var(--color-border-light-primary);
+  border-radius: 6px;
+  background: var(--color-bg-light);
+  padding: 12px;
+  margin: 4px 0;
+}
+
+.name-result-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-border-light-primary);
+}
+
+.name-result-header i {
+  font-size: 16px;
+  color: var(--color-text-dark-secondary);
+}
+
+.name-result-header h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-text-dark-primary);
+}
+
+.name-result-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.selected-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color-text-dark-primary);
+}
+
+.selected-name i {
+  font-size: 16px;
+  color: #3498db;
+}
+
+.nation-info {
+  font-size: 13px;
+  color: var(--color-text-dark-secondary);
+  font-style: italic;
+}
+
+/* Scrollbar styling */
+.nameplace-generator-names-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.nameplace-generator-names-list::-webkit-scrollbar-track {
+  background: var(--color-bg-alt);
+  border-radius: 3px;
+}
+
+.nameplace-generator-names-list::-webkit-scrollbar-thumb {
+  background: var(--color-border-light-primary);
+  border-radius: 3px;
+}
+
+.nameplace-generator-names-list::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border-highlight);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .nameplace-generator-dialog {
+    min-width: 90vw;
+  }
+  
+  .nameplace-generator-name-item {
+    padding: 10px 12px;
+  }
+  
+  .nameplace-generator-name-text {
+    font-size: 14px;
+  }
+}

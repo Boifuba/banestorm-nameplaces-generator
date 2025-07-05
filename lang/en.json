@@ -1,0 +1,29 @@
+{
+  "NAME_GENERATOR": {
+    "ModuleTitle": "Banestorm Place Generator",
+    "DialogTitle": "Banestorm Place Generator",
+    "ButtonTitle": "Place Generator",
+    "SelectNation": "Select Nation",
+    "GenerateCities": "Generate Cities",
+    "CitySentToChat": "Generated city: {city} from {nation}",
+    "Nations": {
+      "megalos-ocidental": "Megalos ocidental",
+      "megalos-oriental": "Megalos oriental",
+      "caithness": "Caithness",
+      "cardiel": "Cardiel", 
+      "al-wazif": "Al-Wazif",
+      "megalos": "Megalos",
+      "al-haz": "Al-Haz",
+      "sahud": "Sahud",
+      "zarak": "Zarak",
+      "araterre": "Araterre",
+      "orc-lands": "Orc Lands",
+      "nomad-territories": "Nomad Territories",
+      "southwest-wildlands": "Southwest Wildlands",
+      "bilit-island": "Bilit Island",
+      "tredroy": "Tredroy",
+      "great-desert": "Great Desert",
+      "black-forest": "Black Forest"
+    }
+  }
+}
