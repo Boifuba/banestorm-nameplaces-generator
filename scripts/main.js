@@ -23,10 +23,6 @@ window.openNameplaceGenerator = function() {
   }
 };
 
-// Also define alternative names for compatibility
-window.nameplaceGeneratorOpen = window.openNameplaceGenerator;
-window.showNameplaceGenerator = window.openNameplaceGenerator;
-
 Hooks.once('init', async () => {
   // Get the module instance from game.modules
   const module = game.modules.get('banestorm-nameplaces-generator');
@@ -59,4 +55,26 @@ Hooks.once('ready', () => {
   
   // Create the generator instance
   module.api.instance = new NameGenerator();
+  
+  // Add control button to token controls
+  Hooks.on('getSceneControlButtons', (controls) => {
+    const tokenControls = controls.find(c => c.name === 'token');
+    if (tokenControls) {
+      tokenControls.tools.push({
+        name: 'nameplace-generator',
+        title: game.i18n.localize('NAME_GENERATOR.ButtonTitle') || 'Place Generator',
+        icon: 'fas fa-city',
+        button: true,
+        onClick: () => {
+          const module = game.modules.get('banestorm-nameplaces-generator');
+          if (module && module.api) {
+            module.api.openDialog();
+          } else {
+            // Fallback to global function
+            window.openNameplaceGenerator();
+          }
+        }
+      });
+    }
+  });
 });
