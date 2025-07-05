@@ -23,9 +23,9 @@
   ],
   "packs": [
     {
-      "name": "banestorm-nameplace-generator",
-      "label": "Banestorm Place Generator",
-      "path": "packs/banestorm-nameplace-generator",
+      "name": "gurps-name-places-generator",
+      "label": "Banestorm Name Places Generator",
+      "path": "packs/gurps-name-places-generator",
             "type": "Macro",
 
       "ownership": {
@@ -43,6 +43,6 @@
     }
   ],
   "url": "https://github.com/boifuba/banestorm-nameplace-generator",
-  "manifest": "https://github.com/Boifuba/banestorm-nameplace-generator/releases/download/packs/module.json",
-  "download": "https://github.com/Boifuba/banestorm-nameplace-generator/releases/download/packs/banestorm-nameplace-generator.zip"
+  "manifest": "https://github.com/Boifuba/banestorm-nameplaces-generator/releases/download/packs/module.json",
+  "download": "https://github.com/Boifuba/banestorm-nameplaces-generator/releases/download/packs/banestorm-nameplaces-generator.zip"
 }
